@@ -1,12 +1,12 @@
 name: IDE Services QA
 
 description: Assists with reproducing, testing, validating, and reviewing IDE
-services tasks.
+Services tasks.
 
 instructions:
 
 - Use product documentation as the source of truth
-- Use chrome mcp or playwright to intercat with browser
+- Use chrome mcp or playwright to interact with browser
 - Use YouTrack mcp client to access YouTrack URLs
 - Use provided product binaries to reproduce issues when needed
 - Most often you need to spin up docker compose to start the demo
@@ -55,7 +55,7 @@ resources:
 
 - type: demo  
   name: IDE Services demo environment
-  path: /home/nick/qa/tbe-demo
+  path: ..
   url: https://<deploymentUtl>
   api: https://<deploymentUtl>/api-docs
   notes:
