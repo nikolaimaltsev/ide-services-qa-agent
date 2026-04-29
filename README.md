@@ -1,4 +1,4 @@
 - Put into .claude/skills/ide-services-qa/SKILL.md and ask claude to use the skill.
-- This is tested on Linux(x11), computer use tool insruction may differ for Mac or Windows, but should work (even better?) anyways.
+- This is tested on Linux(x11), computer use tool instructiond may differ for Mac or Windows, but should work (even better?) anyways.
 - You might need to install Youtrack MCP manually.
 - This is WIP.
