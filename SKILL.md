@@ -30,7 +30,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 **Demo reference config (IDES-A-567):** https://youtrack.jetbrains.com/articles/IDES-A-567/Reference-config-for-application-demo.yaml
 — Use as the starting point unless told otherwise. Write content to `application-demo.yaml`.
 
-**Demo environment:** 
+**Demo environment:**
 — Version is controlled via `docker-compose.yaml`. Verify certificates against `README.md` on first run.
 
 ## Standard Demo Startup
@@ -46,6 +46,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 ## IDE Interaction
 
 **Prefer keyboard over menus:**
+
 - Find Action: `Ctrl+Shift+A` — trigger any action by name
 - Settings: `Ctrl+Alt+S`
 - Toolbox App: lives in the system tray; use arrow keys / Enter / Tab inside it
@@ -53,25 +54,32 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 
 **Prefer direct file edits over IDE GUI** for VM options and log config — the GUI editor requires extra Save clicks and can silently fail:
 
-| Config | Path |
-|---|---|
-| VM options | `~/.config/JetBrains/<ProductVersion>/idea64.vmoptions` |
-| Debug log categories | `~/.config/JetBrains/<ProductVersion>/options/log.xml` |
+| Config               | Path                                                    |
+| -------------------- | ------------------------------------------------------- |
+| VM options           | `~/.config/JetBrains/<ProductVersion>/idea64.vmoptions` |
+| Debug log categories | `~/.config/JetBrains/<ProductVersion>/options/log.xml`  |
 
 **Finding an IDEA installation** — if not under the standard Toolbox path, search broadly:
+
 ```
 find ~ -name "product-info.json" 2>/dev/null | xargs grep -l "IntelliJIdea"
 ```
 
 **Isolating the current session in idea.log** — the log accumulates across restarts:
+
 ```
 grep -n "AppStarter.*JVM options" idea.log | tail -1   # get line N
 tail -n +N idea.log | grep <pattern>
 ```
 
+**Installing the plugin**
+
+- Try installing the plugin from command-line: https://www.jetbrains.com/help/idea/install-plugins-from-the-command-line.html#linux
+
 ## Computer Use / GUI Precision
 
 **Before any GUI interaction**, check the screen resolution — screenshots are full-resolution and coordinates map 1:1 to screen coords:
+
 ```
 xdpyinfo | grep dimensions
 ```
@@ -81,6 +89,7 @@ xdpyinfo | grep dimensions
 **For IDE / desktop interactions:** use `scrot` for screenshots. Take a screenshot first to orient before acting.
 
 **Clicking a dialog button reliably:**
+
 1. Get window geometry: `xdotool getwindowgeometry <wid>`
 2. Crop to the button area to locate its exact center:
    ```
