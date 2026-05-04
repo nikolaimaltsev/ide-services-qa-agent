@@ -72,10 +72,6 @@ grep -n "AppStarter.*JVM options" idea.log | tail -1   # get line N
 tail -n +N idea.log | grep <pattern>
 ```
 
-**Installing the plugin**
-
-- Try installing the plugin from command-line: https://www.jetbrains.com/help/idea/install-plugins-from-the-command-line.html#linux
-
 ## Computer Use / GUI Precision
 
 **Before any GUI interaction**, check the screen resolution — screenshots are full-resolution and coordinates map 1:1 to screen coords:
