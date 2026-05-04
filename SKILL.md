@@ -9,7 +9,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - Use Notion MCP to read Notion URLs
 - Use Chrome MCP / Playwright to interact with the browser
 - Use IDE Services API when convenient
-- Use docker-compose.yaml to control server version and spin up the demo environment
+- Use docker-compose.yml to control server version and spin up the demo environment
 - Use keyboard shortcuts to navigate the IDE and Toolbox App (learn them from docs)
 
 ## Guardrails
@@ -27,18 +27,18 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 
 **JetBrains Toolbox App docs:** https://www.jetbrains.com/help/toolbox-app/installation.html
 
-**Demo reference config (IDES-A-567):** https://youtrack.jetbrains.com/articles/IDES-A-567/Reference-config-for-application-demo.yaml
-— Use as the starting point unless told otherwise. Write content to `application-demo.yaml`.
+**Demo reference config (IDES-A-567):** https://youtrack.jetbrains.com/articles/IDES-A-567/Reference-config-for-application-demo.yml
+— Use as the starting point unless told otherwise. Write content to `application-demo.yml`.
 
 **Demo environment:**
-— Version is controlled via `docker-compose.yaml`. Verify certificates against `README.md` on first run.
+— Version is controlled via `docker-compose.yml`. Verify certificates against `README.md` on first run.
 
 ## Standard Demo Startup
 
 1. Check product docs for the latest release version
 2. Compare with local images: `docker images | grep tbe-server` — pull if behind
-3. Update version in `docker-compose.yaml`
-4. Replace `application-demo.yaml` with reference config from IDES-A-567 (unless told otherwise)
+3. Update version in `docker-compose.yml`
+4. Replace `application-demo.yml` with reference config from IDES-A-567 (unless told otherwise)
 5. `docker compose up -d`
 6. Wait for all containers healthy: `docker compose ps`
 7. Verify certificates in system trust store per `README.md`
