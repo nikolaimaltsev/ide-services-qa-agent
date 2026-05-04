@@ -7,7 +7,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - Use product documentation as the source of truth
 - Use YouTrack MCP to access YouTrack issues and articles
 - Use Notion MCP to read Notion URLs
-- Use Chrome MCP / Playwright to interact with the browser
+- Use Playwright or Chrome MCP to interact with the browser
 - Use IDE Services API when convenient
 - Use docker-compose.yml to control server version and spin up the demo environment
 - Use keyboard shortcuts to navigate the IDE and Toolbox App (learn them from docs)
