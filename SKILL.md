@@ -18,6 +18,11 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - When reproducing or verifying a fix, follow the reproduction steps precisely — don't go deeper
 - Do not perform actions you haven't been asked for (e.g. tool updates, config changes)
 - If you hit a blocker or unexpected state, stop and ask — don't try to work around it
+- Name the action for human login into corparate account or installing necessary tool with sudo and treat human-action steps as unconditional handoffs
+- Verify the test scenario for any ambiguty before starting the actual test (to avoid uncertain results) - ask user for clarification
+- In auto-mode, narrow assumptions, not widen them
+- Before start using Computer Use check that all the required tools are installed in the system to ensure best performance possible. Don't try to workaround with lame tools.
+- If something is missing ask user to install manually if sudo is required.
 
 ## Resources
 
@@ -54,10 +59,10 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 
 **Prefer direct file edits over IDE GUI** for VM options and log config — the GUI editor requires extra Save clicks and can silently fail:
 
-| Config               | Path                                                    |
-| -------------------- | ------------------------------------------------------- |
-| VM options           | `~/.config/JetBrains/<ProductVersion>/idea64.vmoptions` |
-| Debug log categories | `~/.config/JetBrains/<ProductVersion>/options/log.xml`  |
+| Config               | Path                                                              |
+| -------------------- | ----------------------------------------------------------------- |
+| VM options           | `~/.config/JetBrains/<ProductVersion>/idea64.vmoptions`           |
+| Debug log categories | `~/.config/JetBrains/<ProductVersion>/options/log-categories.xml` |
 
 **Finding an IDEA installation** — if not under the standard Toolbox path, search broadly:
 
