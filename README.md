@@ -1,4 +1,5 @@
 - Put into .claude/skills/ide-services-qa/SKILL.md and ask claude to use the skill.
-- This is tested on Linux(x11), computer use tool instructions may differ for Mac or Windows, but should work (even better?) anyways.
-- You might need to install Youtrack MCP manually.
-- This is WIP.
+- This is tested on Linux(x11)
+- Mac and Windows has their own computer use tool, which seem to be more precise. You may want to instuct claude to use it for UI interaction part
+- You might need to install Youtrack and Notion MCPs manually.
+- WIP
