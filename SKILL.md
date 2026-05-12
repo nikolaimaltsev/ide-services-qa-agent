@@ -1,3 +1,8 @@
+---
+name: ide-services-qa
+description: Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
+---
+
 # IDE Services QA
 
 Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
@@ -7,13 +12,14 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - Use product documentation as the source of truth
 - Use YouTrack MCP to access YouTrack issues and articles
 - Use Notion MCP to read Notion URLs
-- Use Playwright/Chrome MCP to interact with the browser
+- Use Playwright (preferrable) or Chrome MCP to interact with the browser
 - Use IDE Services API when convenient
 - Use docker-compose.yml to control server version and spin up the demo environment
 - Use keyboard shortcuts to navigate the IDE and Toolbox App (learn them from docs)
 
 ## Guardrails
 
+- Priority is to perform the task in most reliable way possible, fast and avoid exta action that consumes tokens. If user needs to permorm some action manually to ublock you from the best possible path to perform - stop by and ask him to do so, don't worry about bothering him, even in auto-mode.
 - If information is missing, ask for it rather than guessing
 - When reproducing or verifying a fix, follow the reproduction steps precisely — don't go deeper
 - Do not perform actions you haven't been asked for (e.g. tool updates, config changes)
