@@ -1,0 +1,13 @@
+# Docker / Demo Setup
+
+## Standard Demo Startup
+
+- Ask user for the demo setup location if not specified
+- Compare requested version with local images: `docker images | grep tbe-server` — pull if behind
+- Update version in `docker-compose.yml` if needed
+- When deploying a build first tome always replace`application-demo.yml` with the reference config from https://youtrack.jetbrains.com/articles/IDES-A-567/Reference-config-for-application-demo.yaml unless asked otherwise
+- Wait for all containers healthy: `docker compose ps`
+- Verify certificates in system trust store per `README.md`
+- Ask user to run commands to add certificates (giving sudo required), and what command exactly
+- If asked to login to UI make sure to enable ide-services-ui skill
+- After clicking "Log in" in the Toolbox join dialog, the OAuth flow opens in the system default browser. Once the user authenticates, the page redirects via a `jetbrains://toolbox/enterprise/auth?code=...` deep link. If the browser doesn't have the `jetbrains://` handler registered (e.g. Firefox by default), the page stays on "Joining organization..." indefinitely — but **the join has already succeeded**: Toolbox catches the callback through its local listener. Verify via the Toolbox widget (Settings → look for the "Leave..." button next to the account), not via the browser tab.
