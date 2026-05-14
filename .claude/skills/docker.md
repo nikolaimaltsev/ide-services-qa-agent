@@ -10,4 +10,3 @@
 - Verify certificates in system trust store per `README.md`
 - Ask user to run commands to add certificates (giving sudo required), and what command exactly
 - If asked to login to UI make sure to enable ide-services-ui skill
-- After clicking "Log in" in the Toolbox join dialog, the OAuth flow opens in the system default browser. Once the user authenticates, the page redirects via a `jetbrains://toolbox/enterprise/auth?code=...` deep link. If the browser doesn't have the `jetbrains://` handler registered (e.g. Firefox by default), the page stays on "Joining organization..." indefinitely — but **the join has already succeeded**: Toolbox catches the callback through its local listener. Verify via the Toolbox widget (Settings → look for the "Leave..." button next to the account), not via the browser tab.

@@ -43,3 +43,4 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 | Toolbox App navigation, settings, install flows | `.claude/skills/toolbox.md` |
 | IntelliJ IDEA interaction, VM options, log inspection | `.claude/skills/ide.md` |
 | Screenshots, clicking, coordinate math, GUI precision | `.claude/skills/computer-use.md` |
+| IDE Services API, use it when explicitly asked to |`.claude/skills/api.md` |
