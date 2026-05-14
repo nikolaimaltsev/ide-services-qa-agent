@@ -21,7 +21,7 @@ Tested on **Ubuntu 22.04 x11** (Wayland is not supported). The recommended setup
 
 You can also run this on your local machine if you want everything in one place.
 
-Most if not all of features works perfectly on **MacOS**. Some report successful use. Thourough testing on Mac upcoming.
+Most if not all of features works perfectly on **MacOS**. People report successful use. Please try it and let me know. Thourough testing on Mac will follow, if there will be interest.
 
 > **Container deployment (coming soon):** A pre-packaged Linux container is planned so you can pull and run the agent without any manual setup, freeing up your host machine entirely.
 
