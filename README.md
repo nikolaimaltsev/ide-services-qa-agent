@@ -11,7 +11,7 @@ A Claude Code agent for reproducing, testing, validating, and reviewing JetBrain
 - **Full UI coverage** — uses computer vision to see and interact with any UI element, including Toolbox App and IntelliJ IDEA, not just the browser
 - **YouTrack & Notion integration** — reads issues and articles from YouTrack, reads and writes Notion pages
 - **Multi-modal interaction** — prefers API where possible, falls back to web UI, falls back to computer vision — in that order
-- **Documentation as a source of truth**
+- **Product documentation as a source of truth**
 
 ---
 
