@@ -71,13 +71,13 @@ Claude Code picks up `CLAUDE.md` automatically. No additional configuration is r
 
 ## Roadmap
 
-- [ ] `api.md` skill — API interaction already works; a dedicated skill would make it more reliable
-- [ ] Test on MacOS
-- [ ] Central memory store — shared across QA engineers to accumulate corner cases and speed up future reproduction
+- [ ] `api.md` skill — API interaction already works; a dedicated skill would be nice still
+- [ ] Test on MacOS (if interested)
 - [ ] Pre-packaged container — pull and run, no setup required
-- [ ] Git integration — for tracking reproduction artifacts (low priority)
+- [ ] Central claude memory store — shared across QA engineers to accumulate corner cases and speed up future reproduction
+- [ ] Git repo integration — for tracking reproduction artifacts (low priority)
 - [ ] Glean MCP — available when needed, omitted for now to keep context lean
-- [ ] mcp-steroid — useful for select scenarios
+- [ ] mcp-steroid — migth be useful for select scenarios
 
 ---
 
