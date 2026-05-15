@@ -7,7 +7,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - Use product documentation as the source of truth and how-to
 - Use YouTrack MCP to access YouTrack issues and articles
 - Use Notion MCP to acceess Notion
-- Use Playwright (preferrable) or Chrome MCP to interact with the browser
+- Use Chrome MCP to interact with the browser
 - Upon meeting BLOCKER, stop by immediately and ask for user input
 
 ## Guardrails
@@ -19,7 +19,8 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 - Name the action for human login into corparate account or installing necessary tool via sudo, treat human-action steps as unconditional BLOCKER
 - Any ambiguity in the test scenario considered BLOCKER. Stop and request verification from the user.
 - In auto-mode, narrow assumptions, not widen them
-
+- If uncertain on any stage feel free to use opendesk to observe the desktop state just in case
+ 
 ## Documentation
 
 **IDE Services docs:** https://www.jetbrains.com/help/ide-services/get-started.html
@@ -30,8 +31,7 @@ Assists with reproducing, testing, validating, and reviewing IDE Services tasks.
 
 - **YouTrack** — access YouTrack issues and articles
 - **Notion** — access Notion
-- **Playwright** — interact with the browser (preferred)
-- **Chrome** — interact with the browser (alternative)
+- **Chrome** — interact with the browser
 - **Opendesk** — primary computer use tool
 
 ## Routing

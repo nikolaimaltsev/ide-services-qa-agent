@@ -1,16 +1,11 @@
 # Browser MCP
 
-Operational notes for interacting with web UIs via Chrome MCP or Playwright.
+Operational notes for interacting with web UIs via Chrome MCP.
 
-- Chromium uses `~/.pki/nssdb`, not the system CA bundle — after the README's `update-ca-certificates`, also import the server cert into NSS so MCP browsers stop firing cert-error toasts on every refresh:
-  ```bash
-  certutil -d sql:$HOME/.pki/nssdb -D -n tbe-demo-localhost 2>/dev/null
-  certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n tbe-demo-localhost -i server-ssl-cert.pem
-  ```
-  Re-run when the server cert rotates (SHA1 from `openssl s_client -connect localhost:8443 ... | openssl x509 -noout -fingerprint -sha1` no longer matches the NSS entry).
 - Chrome MCP refs are snapshot-local. Any state change between snapshot and click (the previous click, a
 toast, a modal close, a network response settling) can renumber them. Re-snapshot immediately before each
 click whose neighborhood may have moved.
 - Don't `click_ref` icon-only buttons. Multiple "+", "⋮", "×" in one view are indistinguishable in the
 a11y tree. Use `eval` to find the nearest labeled anchor (heading text, field label) and click the button
 scoped to it.
+- Ignore SSL certificate issues, Advanced → "Proceed to localhost (unsafe)"

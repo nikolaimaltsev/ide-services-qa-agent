@@ -22,3 +22,7 @@ xdpyinfo | grep dimensions
    ```
 3. Compute screen coords from the crop offset + button center in the crop
 4. If the click still misses, use keyboard instead: `xdotool key alt+Return` (OK), `alt+c` (Cancel), or `Tab` / `Space` to navigate and press
+
+- When asked to activate license manually, best pasting method is Opendesk mouse click on the activation code area, then Ctrl+V
+
+- Read OS clipboard via opendesk clipboard read
