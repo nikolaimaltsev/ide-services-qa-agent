@@ -71,7 +71,6 @@ Claude Code picks up `CLAUDE.md` automatically. No additional configuration is r
 
 ## Roadmap
 
-- [ ] `api.md` skill — API interaction already works; a dedicated skill would be nice still
 - [ ] Test on MacOS (if interested)
 - [ ] Pre-packaged container — pull and run, no setup required
 - [ ] Central claude memory store — shared across QA engineers to accumulate corner cases and speed up future reproduction
